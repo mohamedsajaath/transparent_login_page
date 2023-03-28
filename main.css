@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+}
+body{
+    height: 100vh;
+    overflow: hidden
+}
+
+
+.image{ 
+    width: 100%;
+    height: 130vh;
+}
+.login-container{
+    width:30%;
+    height: 40%;
+    background:transparent;
+    backdrop-filter: blur(2px);
+    box-shadow: 1px 1px 50px rgb(134, 133, 133);
+    position: absolute;
+    top:30%;
+    left:35%;
+    padding-top: 1%;
+    animation: mymove 3s;
+}
+.to-top{
+    z-index: 100;
+}
+input{
+    background: transparent;
+    width:70%;
+    height: 40px;
+   margin-left: 15%;
+   margin-top: 10%;
+   border-radius: 5px;
+   border:none;
+   box-shadow: 1px 1px 30px rgb(134, 133, 133);
+   text-align: center;
+   color:white;
+   box-shadow:inset 1px 1px 10px rgb(233, 233, 233);
+
+}
+input::placeholder{
+color: rgb(190, 190, 190);
+}
+input:focus{
+outline: none;
+}
+.submit-btn{
+    width:30%;
+    margin-left: 35%;
+    margin-top: 8%;
+    height: 40px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: none;
+    background: transparent;
+    backdrop-filter: blur(100px);
+    color: rgb(190, 190, 190);
+    box-shadow: 1px 1px 50px rgb(233, 233, 233);
+    box-shadow:inset 1px 1px 10px rgb(233, 233, 233);
+}
+a{
+    text-decoration: none;
+    color: rgb(197, 197, 197);
+  text-align: center;
+}
+
+
+@keyframes mymove {
+    from { top:110%;}
+    to {  top:30;}
+  }
